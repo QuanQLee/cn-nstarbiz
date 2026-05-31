@@ -7,6 +7,8 @@
 - `index.html`：首页结构和中文文案
 - `styles.css`：响应式视觉样式
 - `main.js`：移动端导航和需求摘要表单
+- `robots.txt`：搜索引擎抓取规则模板
+- `sitemap.xml`：站点地图模板，正式域名确定后替换 `example.com`
 - `assets/product-line-workbench.png`：首屏产品视觉图
 - `tools/generate-hero-asset.ps1`：重新生成首屏视觉图的脚本
 
