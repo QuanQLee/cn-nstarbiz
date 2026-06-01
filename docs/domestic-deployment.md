@@ -45,8 +45,11 @@
 把仓库中的以下文件上传到服务器站点目录：
 
 - `index.html`
+- `privacy.html`
 - `styles.css`
 - `main.js`
+- `robots.txt`
+- `sitemap.xml`
 - `README.md` 可不上传
 - `assets/`
 

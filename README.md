@@ -9,6 +9,7 @@
 - `main.js`：移动端导航和需求摘要表单
 - `robots.txt`：搜索引擎抓取规则模板
 - `sitemap.xml`：站点地图模板，正式域名确定后替换 `example.com`
+- `privacy.html`：隐私政策模板，正式上线前按实际主体和服务补充
 - `assets/product-line-workbench.png`：首屏产品视觉图
 - `tools/generate-hero-asset.ps1`：重新生成首屏视觉图的脚本
 

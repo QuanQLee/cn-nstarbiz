@@ -39,9 +39,11 @@ leadForm?.addEventListener("submit", (event) => {
 
   const formData = new FormData(leadForm);
   const company = String(formData.get("company") || "未填写企业/个人名称").trim();
+  const contact = String(formData.get("contact") || "未填写联系方式").trim();
+  const stage = String(formData.get("stage") || "未选择项目阶段").trim();
   const interest = String(formData.get("interest") || "未选择方向").trim();
   const message = String(formData.get("message") || "未填写需求描述").trim();
 
-  formOutput.textContent = `需求摘要已生成：\n名称：${company}\n关注方向：${interest}\n需求：${message}\n\n后续可将这里接入 CRM 线索接口、个人咨询分组、企业微信通知或邮件发送服务。`;
+  formOutput.textContent = `需求摘要已生成：\n名称：${company}\n联系方式：${contact}\n项目阶段：${stage}\n关注方向：${interest}\n需求：${message}\n\n后续可将这里接入 CRM 线索接口、个人咨询分组、企业微信通知或邮件发送服务。`;
   formOutput.classList.add("is-visible");
 });
