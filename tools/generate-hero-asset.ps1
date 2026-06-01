@@ -58,7 +58,7 @@ $graphics.DrawRectangle($linePen, 205, 188, 1390, 672)
 
 $navBrush = New-Object System.Drawing.SolidBrush (New-Color "#101820")
 Fill-RoundRect $graphics $navBrush 210 190 250 668 16
-Draw-Label $graphics "NStarBiz" 258 238 34 (New-Color "#ffffff") "Bold"
+Draw-Label $graphics "Polaris" 258 238 34 (New-Color "#ffffff") "Bold"
 Draw-Label $graphics "Product Workbench" 258 286 20 (New-Color "#aeb8c2")
 
 $menuItems = @("CRM", "ERP Orders", "Inventory", "Device Data", "Analytics")
