@@ -104,9 +104,13 @@ textarea {
   height: 40px;
   place-items: center;
   border-radius: var(--radius);
-  background: var(--red);
-  color: #fff;
-  font-weight: 800;
+  overflow: hidden;
+  background: #07131f;
+}
+
+.brand-mark img {
+  width: 100%;
+  height: 100%;
 }
 
 .brand-text {

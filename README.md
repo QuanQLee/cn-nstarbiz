@@ -11,6 +11,7 @@
 - `sitemap.xml`：站点地图模板，正式域名确定后替换 `example.com`
 - `privacy.html`：隐私政策页面，按当前表单、邮箱和企业微信咨询方式说明信息处理
 - `assets/product-line-workbench.png`：首屏产品视觉图
+- `assets/brand/`：北极星工作室 Logo 与标识资源
 - `tools/generate-hero-asset.ps1`：重新生成首屏视觉图的脚本
 
 ## 本地预览
