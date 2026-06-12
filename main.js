@@ -44,6 +44,6 @@ leadForm?.addEventListener("submit", (event) => {
   const interest = String(formData.get("interest") || "未选择方向").trim();
   const message = String(formData.get("message") || "未填写需求描述").trim();
 
-  formOutput.textContent = `需求摘要已整理：\n名称：${company}\n联系方式：${contact}\n项目阶段：${stage}\n关注方向：${interest}\n需求：${message}\n\n你可以将这段摘要发送至 contact@nstarbiz.com，便于北极星工作室评估范围、周期和沟通方式。`;
+  formOutput.textContent = `需求摘要已整理：\n名称：${company}\n联系方式：${contact}\n项目阶段：${stage}\n关注方向：${interest}\n需求：${message}\n\n你可以将这段摘要发送至 contact@nstarbiz.com，或拨打 18173933209 沟通项目范围、周期和协作方式。`;
   formOutput.classList.add("is-visible");
 });
