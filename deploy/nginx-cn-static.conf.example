@@ -1,6 +1,6 @@
 server {
     listen 80;
-    server_name example.com www.example.com;
+    server_name cn.nstarbiz.com;
 
     root /var/www/cn-nstarbiz;
     index index.html;

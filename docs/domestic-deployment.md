@@ -2,6 +2,8 @@
 
 本项目当前是纯静态官网，可以部署到国内云服务器、对象存储静态网站、CDN 或传统虚拟主机。GitHub 只建议作为代码仓库，不建议用 GitHub Pages 作为国内正式访问入口。
 
+当前国内站规划域名：`https://cn.nstarbiz.com`。`nstarbiz.com` 和 `www.nstarbiz.com` 可保留给国际站。
+
 ## 推荐部署路线
 
 1. 购买并实名认证域名

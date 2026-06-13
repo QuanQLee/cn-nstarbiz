@@ -8,7 +8,7 @@
 - `styles.css`：响应式视觉样式
 - `main.js`：移动端导航和需求摘要表单
 - `robots.txt`：搜索引擎抓取规则模板
-- `sitemap.xml`：站点地图模板，正式域名确定后替换 `example.com`
+- `sitemap.xml`：站点地图，当前国内站域名为 `https://cn.nstarbiz.com`
 - `privacy.html`：隐私政策页面，按当前表单、电话和邮箱咨询方式说明信息处理
 - `assets/product-line-workbench.png`：首屏产品视觉图
 - `assets/brand/`：北极星工作室 Logo 与标识资源
@@ -20,7 +20,7 @@
 
 ## 国内部署
 
-后续如需部署到中国国内网址，请先参考 `docs/domestic-deployment.md`。当前项目为纯静态页面，适合部署到国内云服务器、对象存储静态网站或 CDN。
+后续如需部署到中国国内网址，请先参考 `docs/domestic-deployment.md`。当前项目为纯静态页面，国内站域名规划为 `https://cn.nstarbiz.com`，适合部署到国内云服务器、对象存储静态网站或 CDN。
 
 ## 上线前建议补充
 
