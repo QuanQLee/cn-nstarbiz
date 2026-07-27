@@ -1,31 +1,57 @@
-# 北极星工作室数字化产品与开发服务官网首页
+# 北极星工作室官网
 
-这是一个面向中国国内企业客户与个人用户的官网首页原型，适合用于 CRM、ERP、个人应用、软硬件集成和定制开发业务的第一版展示页。
+北极星工作室面向企业、个体经营者和个人项目，提供软件系统开发、网站与小程序、AI 应用、智能硬件联调以及部署维护服务。
+
+当前版本是无需构建工具的纯静态官网，可直接部署到 Nginx、对象存储静态网站或 CDN。
 
 ## 文件说明
 
 - `index.html`：首页结构和中文文案
-- `styles.css`：响应式视觉样式
-- `main.js`：移动端导航和需求摘要表单
-- `robots.txt`：搜索引擎抓取规则模板
-- `sitemap.xml`：站点地图，当前国内站域名为 `https://cn.nstarbiz.com`
-- `privacy.html`：隐私政策页面，按当前表单、电话和邮箱咨询方式说明信息处理
-- `assets/product-line-workbench.png`：首屏产品视觉图
-- `assets/brand/`：北极星工作室 Logo 与标识资源
-- `tools/generate-hero-asset.ps1`：重新生成首屏视觉图的脚本
+- `styles.css`：桌面端与移动端响应式样式
+- `main.js`：移动端导航、需求摘要生成和复制功能
+- `privacy.html`：隐私政策
+- `robots.txt`：搜索引擎抓取规则
+- `sitemap.xml`：站点地图，正式域名为 `https://cn.nstarbiz.com`
+- `assets/brand/`：北极星工作室 Logo 与品牌标识
+- `assets/case-website-hero-v2.jpg`：企业官网多端案例展示图
+- `assets/case-dashboard-clean.png`：业务系统与数据看板案例展示图
+- `assets/case-ai-hardware-clean.png`：AI 与智能硬件联调案例展示图
+- `deploy/nginx-cn-static.conf.example`：Nginx 配置示例
+- `docs/domestic-deployment.md`：国内部署准备清单
 
 ## 本地预览
 
-直接用浏览器打开 `index.html` 即可预览。当前版本没有依赖构建工具，也不会提交表单到后端。
+直接用浏览器打开 `index.html` 即可预览。也可以在项目目录启动本地静态服务器：
 
-## 国内部署
+```powershell
+python -m http.server 4173 --bind 127.0.0.1
+```
 
-后续如需部署到中国国内网址，请先参考 `docs/domestic-deployment.md`。当前项目为纯静态页面，国内站域名规划为 `https://cn.nstarbiz.com`，适合部署到国内云服务器、对象存储静态网站或 CDN。
+然后访问 `http://127.0.0.1:4173/index.html`。
 
-## 上线前建议补充
+## 咨询流程
 
-- 品牌信息和 Logo
-- 公安备案号、隐私政策和个人信息授权说明
-- 已授权案例、行业方案、资质证书
-- 表单接口、在线客服、企业微信通知、个人咨询分组或 CRM 线索入库
-- 百度统计、搜索关键词、TDK 和站点地图
+首页表单只在浏览器中整理并复制一段微信沟通内容，不会自动上传或提交个人信息。
+
+页面右下角提供在线咨询入口，按需加载 `https://app.cn.nstarbiz.com/chat-widget.html`。访客主动发送后，姓名、手机号或邮箱及咨询内容会进入云客 CRM，形成线索、沟通记录和后续跟进任务。公开页面不保存 CRM API 密钥。
+
+当前联系方式：
+
+- 云客 CRM 在线咨询
+- 微信 / 企业微信优先
+- 电话/微信：`18173933209`
+- 备用邮箱：`contact@nstarbiz.com`
+
+企业微信二维码尚未接入，不影响当前版本上线。二维码准备好后，可在联系区增加扫码入口。
+
+## 上线前确认
+
+- `contact@nstarbiz.com` 已开通并完成收发测试
+- `cn.nstarbiz.com` 已解析到正式服务器或静态托管服务
+- HTTPS 证书有效，HTTP 自动跳转 HTTPS
+- `https://app.cn.nstarbiz.com/chat-widget.html` 可正常访问，主站在线咨询可发送并进入 CRM
+- ICP 备案号与实际备案主体、域名一致
+- 当前案例图片均可公开展示，不包含客户隐私或未授权品牌
+- 已上传 `index.html`、`privacy.html`、`styles.css`、`main.js`、`robots.txt`、`sitemap.xml` 和完整 `assets/` 目录
+
+公安联网备案、企业微信二维码和访问统计可在正式上线后继续补充。
