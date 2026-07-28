@@ -101,7 +101,7 @@
 
       <section class="section audience" id="audience">
         <div class="section-shell section-heading">
-          <p class="section-kicker">Who We Serve</p>
+          <p class="section-kicker">适合谁</p>
           <h2>为明确的业务问题提供技术实现</h2>
           <p>
             无论是优化现有流程、建设新产品，还是验证软硬件方案，我们都会先理解目标和使用场景，再确定合适的建设范围。
@@ -135,7 +135,7 @@
 
       <section class="section products" id="products">
         <div class="section-shell section-heading">
-          <p class="section-kicker">What We Build</p>
+          <p class="section-kicker">服务内容</p>
           <h2>从业务系统到设备端，按实际需求组合开发</h2>
           <p>
             项目可以从单一页面、一个业务模块或一套验证方案开始，也可以覆盖前端、后台、数据、AI 和设备接入的完整链路。
@@ -204,7 +204,7 @@
       <section class="section solutions" id="solutions">
         <div class="section-shell solution-layout">
           <div class="section-heading align-left">
-            <p class="section-kicker">Solutions</p>
+            <p class="section-kicker">解决方案</p>
             <h2>围绕真实业务链路设计解决方案</h2>
             <p>
               先找到最影响效率、体验或交付的关键环节，再把页面、系统、数据、AI 和设备能力组合成可执行的方案。
@@ -253,19 +253,30 @@
 
       <section class="section cases" id="cases">
         <div class="section-shell section-heading">
-          <p class="section-kicker">Selected Scenarios</p>
+          <p class="section-kicker">场景案例</p>
           <h2>三类常见项目，从界面延伸到系统能力</h2>
           <p>通过典型场景展示不同项目的建设重点，帮助你快速判断需求方向和适合的合作范围。</p>
         </div>
 
         <div class="section-shell case-grid">
           <article class="case-card">
-            <figure class="case-media">
+            <a
+              class="case-media"
+              href="./assets/case-detail-website.webp"
+              target="_blank"
+              rel="noopener"
+              aria-label="查看企业官网与响应式展示页面场景大图"
+            >
               <img
                 src="./assets/case-detail-website.webp"
                 alt="企业官网与响应式展示页面详细场景案例"
+                width="960"
+                height="1200"
+                loading="lazy"
+                decoding="async"
               />
-            </figure>
+              <span class="case-media-action">查看大图 ↗</span>
+            </a>
             <span>场景案例 01</span>
             <h3>企业官网 / 展示页面</h3>
             <p>建立清晰的品牌与服务入口，让客户在不同设备上快速了解业务并发起咨询。</p>
@@ -282,12 +293,23 @@
           </article>
 
           <article class="case-card accent-green">
-            <figure class="case-media">
+            <a
+              class="case-media"
+              href="./assets/case-detail-dashboard.webp"
+              target="_blank"
+              rel="noopener"
+              aria-label="查看业务管理系统与数据看板场景大图"
+            >
               <img
                 src="./assets/case-detail-dashboard.webp"
                 alt="业务管理系统与数据看板详细场景案例"
+                width="960"
+                height="1200"
+                loading="lazy"
+                decoding="async"
               />
-            </figure>
+              <span class="case-media-action">查看大图 ↗</span>
+            </a>
             <span>场景案例 02</span>
             <h3>业务管理系统 / 数据看板</h3>
             <p>把分散的客户、订单、工单和经营数据汇集到统一工作台，支撑日常协作与决策。</p>
@@ -304,12 +326,23 @@
           </article>
 
           <article class="case-card accent-gold">
-            <figure class="case-media">
+            <a
+              class="case-media"
+              href="./assets/case-detail-ai-hardware.webp"
+              target="_blank"
+              rel="noopener"
+              aria-label="查看 AI 工具与智能硬件联调场景大图"
+            >
               <img
                 src="./assets/case-detail-ai-hardware.webp"
                 alt="AI 工具与智能硬件联调详细场景案例"
+                width="960"
+                height="1200"
+                loading="lazy"
+                decoding="async"
               />
-            </figure>
+              <span class="case-media-action">查看大图 ↗</span>
+            </a>
             <span>场景案例 03</span>
             <h3>AI 工具 / 智能硬件联调</h3>
             <p>连接 AI 能力、设备接口和业务平台，完成数据采集、状态监控与联合验证。</p>
@@ -329,7 +362,7 @@
 
       <section class="section delivery" id="delivery">
         <div class="section-shell section-heading">
-          <p class="section-kicker">How We Work</p>
+          <p class="section-kicker">合作流程</p>
           <h2>从需求确认到稳定上线，每一步都有明确产出</h2>
           <p>先确认目标、范围和优先级，再分阶段完成设计、开发、联调与上线，确保项目过程清晰、结果可验收。</p>
         </div>
@@ -343,6 +376,7 @@
                 <div>
                   <strong>需求澄清</strong>
                   <p>了解使用对象、业务流程、现有工具和期望结果。</p>
+                  <p class="timeline-output"><strong>阶段产出：</strong>需求清单与优先级</p>
                 </div>
               </li>
               <li>
@@ -350,6 +384,7 @@
                 <div>
                   <strong>原型与方案</strong>
                   <p>确认功能边界、页面结构、数据关系和技术路径。</p>
+                  <p class="timeline-output"><strong>阶段产出：</strong>页面原型与技术方案</p>
                 </div>
               </li>
               <li>
@@ -357,6 +392,7 @@
                 <div>
                   <strong>开发与联调</strong>
                   <p>按阶段完成开发、接口对接、设备联调和功能验收。</p>
+                  <p class="timeline-output"><strong>阶段产出：</strong>可验收版本与联调记录</p>
                 </div>
               </li>
               <li>
@@ -364,6 +400,7 @@
                 <div>
                   <strong>上线与迭代</strong>
                   <p>完成部署、数据准备和使用交接，并根据反馈持续优化。</p>
+                  <p class="timeline-output"><strong>阶段产出：</strong>上线资料与维护计划</p>
                 </div>
               </li>
             </ol>
@@ -393,7 +430,7 @@
       <section class="section launch" id="launch">
         <div class="section-shell launch-layout">
           <div class="section-heading align-left">
-            <p class="section-kicker">Collaboration</p>
+            <p class="section-kicker">合作方式</p>
             <h2>让范围、进度和后续维护始终保持清晰</h2>
             <p>
               项目开始前明确边界和阶段目标，过程中同步关键决策与可验收成果，上线后保留必要的技术资料和维护路径。
@@ -427,7 +464,7 @@
 
       <section class="section tech" id="tech">
         <div class="section-shell section-heading">
-          <p class="section-kicker">Technical Capability</p>
+          <p class="section-kicker">技术能力</p>
           <h2>软件、AI、数据与设备协同建设</h2>
           <p>根据项目目标选择合适的技术组合，让前端体验、后台流程、数据接口和设备能力能够稳定协作。</p>
         </div>
@@ -454,7 +491,7 @@
 
       <section class="section faq" id="faq">
         <div class="section-shell section-heading">
-          <p class="section-kicker">FAQ</p>
+          <p class="section-kicker">咨询前了解</p>
           <h2>常见问题</h2>
           <p>需求不必一开始就非常完整，先说明现状、目标和主要问题，我们会一起判断适合的启动方式。</p>
         </div>
@@ -482,7 +519,7 @@
       <section class="section contact" id="contact">
         <div class="section-shell contact-layout">
           <div class="contact-copy">
-            <p class="section-kicker">Project Inquiry</p>
+            <p class="section-kicker">项目咨询</p>
             <h2>告诉我们你想解决的问题</h2>
             <p>
               可先通过企业微信或在线咨询说明项目背景、当前阶段和期望结果。需要发送文档、合同或附件时，再使用邮箱沟通。
@@ -509,7 +546,7 @@
 
           <form class="lead-form" data-lead-form aria-label="项目需求整理工具">
             <div class="form-heading">
-              <p class="section-kicker">Quick Brief</p>
+              <p class="section-kicker">需求整理</p>
               <h3>快速整理项目需求</h3>
               <p>填写基本信息后，页面会生成并复制一段沟通摘要，方便直接发送。</p>
             </div>
