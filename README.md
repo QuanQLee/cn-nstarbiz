@@ -1,6 +1,6 @@
 # 北极星工作室官网
 
-北极星工作室面向企业、个体经营者和个人项目，提供软件系统开发、网站与小程序、AI 应用、智能硬件联调以及部署维护服务。
+北极星工作室面向企业、创业团队和独立项目，提供定制软件系统、网站与移动端、AI 应用、智能硬件联调以及部署维护服务。
 
 当前版本是无需构建工具的纯静态官网，可直接部署到 Nginx、对象存储静态网站或 CDN。
 
@@ -13,6 +13,7 @@
 - `robots.txt`：搜索引擎抓取规则
 - `sitemap.xml`：站点地图，正式域名为 `https://cn.nstarbiz.com`
 - `assets/brand/`：北极星工作室 Logo 与品牌标识
+- `assets/hero-connected-development.webp`：首页软硬件协同开发场景图
 - `assets/case-website-hero-v2.jpg`：企业官网多端案例展示图
 - `assets/case-dashboard-clean.png`：业务系统与数据看板案例展示图
 - `assets/case-ai-hardware-clean.png`：AI 与智能硬件联调案例展示图
