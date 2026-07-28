@@ -16,6 +16,8 @@
 - `assets/case-website-hero-v2.jpg`：企业官网多端案例展示图
 - `assets/case-dashboard-clean.png`：业务系统与数据看板案例展示图
 - `assets/case-ai-hardware-clean.png`：AI 与智能硬件联调案例展示图
+- `assets/case-detail-*.webp`：场景案例详细展示图
+- `assets/wecom-contact-qr.png`：企业微信联系二维码
 - `deploy/nginx-cn-static.conf.example`：Nginx 配置示例
 - `docs/domestic-deployment.md`：国内部署准备清单
 
@@ -42,7 +44,7 @@ python -m http.server 4173 --bind 127.0.0.1
 - 电话/微信：`18173933209`
 - 备用邮箱：`contact@nstarbiz.com`
 
-企业微信二维码尚未接入，不影响当前版本上线。二维码准备好后，可在联系区增加扫码入口。
+联系区已接入企业微信二维码，客户可扫码添加项目负责人；电话和邮箱继续作为备用联系方式。
 
 ## 上线前确认
 
@@ -54,4 +56,4 @@ python -m http.server 4173 --bind 127.0.0.1
 - 当前案例图片均可公开展示，不包含客户隐私或未授权品牌
 - 已上传 `index.html`、`privacy.html`、`styles.css`、`main.js`、`robots.txt`、`sitemap.xml` 和完整 `assets/` 目录
 
-公安联网备案、企业微信二维码和访问统计可在正式上线后继续补充。
+公安联网备案和访问统计可在正式上线后继续补充。

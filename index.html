@@ -10,7 +10,7 @@
     <title>北极星工作室 | 数字化产品与开发服务</title>
     <link rel="canonical" href="https://cn.nstarbiz.com/" />
     <link rel="icon" href="./assets/brand/northstar-mark.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./styles.css?v=20260727-crm-chat-1" />
+    <link rel="stylesheet" href="./styles.css?v=20260728-site-2" />
   </head>
   <body>
     <header class="site-header" data-header>
@@ -256,7 +256,10 @@
         <div class="section-shell case-grid">
           <article class="case-card">
             <figure class="case-media">
-              <img src="./assets/case-website-hero-v2.jpg" alt="电脑、平板和手机多端企业官网服务场景图" />
+              <img
+                src="./assets/case-detail-website.webp"
+                alt="企业官网与响应式展示页面详细场景案例"
+              />
             </figure>
             <span>场景案例 01</span>
             <h3>企业官网 / 展示页面</h3>
@@ -275,7 +278,10 @@
 
           <article class="case-card accent-green">
             <figure class="case-media">
-              <img src="./assets/case-dashboard-clean.png" alt="业务管理系统和数据看板服务场景图" />
+              <img
+                src="./assets/case-detail-dashboard.webp"
+                alt="业务管理系统与数据看板详细场景案例"
+              />
             </figure>
             <span>场景案例 02</span>
             <h3>业务管理系统 / 数据看板</h3>
@@ -294,7 +300,10 @@
 
           <article class="case-card accent-gold">
             <figure class="case-media">
-              <img src="./assets/case-ai-hardware-clean.png" alt="AI 工具和智能硬件联调服务场景图" />
+              <img
+                src="./assets/case-detail-ai-hardware.webp"
+                alt="AI 工具与智能硬件联调详细场景案例"
+              />
             </figure>
             <span>场景案例 03</span>
             <h3>AI 工具 / 智能硬件联调</h3>
@@ -469,19 +478,36 @@
         <div class="section-shell contact-layout">
           <div class="contact-copy">
             <p class="section-kicker">Contact</p>
-            <h2>生成一段微信沟通内容</h2>
+            <h2>扫码联系，直接沟通项目需求</h2>
             <p>
-              建议先通过微信或企业微信沟通，把需求摘要直接发过去；邮箱保留给后续发送资料、合同或附件。
+              添加企业微信后，可直接发送项目类型、当前阶段和主要需求。需要传送资料、合同或附件时，再使用邮箱沟通。
             </p>
+            <div class="contact-qr">
+              <img
+                src="./assets/wecom-contact-qr.png"
+                alt="北极星工作室项目负责人李志鸿的企业微信二维码"
+                width="400"
+                height="400"
+              />
+              <div>
+                <strong>企业微信扫码咨询</strong>
+                <span>李志鸿 · 项目负责人</span>
+                <small>添加时备注项目类型，方便快速确认沟通方向。</small>
+              </div>
+            </div>
             <div class="contact-methods" aria-label="联系方式">
-              <span>微信 / 企业微信优先</span>
-              <button class="contact-chat-action" type="button" data-crm-chat-open>在线直接咨询</button>
-              <a href="tel:18173933209">电话/微信：18173933209</a>
-              <a href="mailto:contact@nstarbiz.com">邮箱备用：contact@nstarbiz.com</a>
+              <button class="contact-chat-action" type="button" data-crm-chat-open>打开在线咨询</button>
+              <a href="tel:18173933209" aria-label="拨打电话 18173933209">电话 18173933209</a>
+              <a href="mailto:contact@nstarbiz.com" aria-label="发送邮件至 contact@nstarbiz.com">contact@nstarbiz.com</a>
             </div>
           </div>
 
-          <form class="lead-form" data-lead-form>
+          <form class="lead-form" data-lead-form aria-label="项目需求整理工具">
+            <div class="form-heading">
+              <p class="section-kicker">需求整理</p>
+              <h3>先把项目情况简单写下来</h3>
+              <p>填写后将自动生成并复制一段沟通内容，再粘贴到企业微信发送即可。</p>
+            </div>
             <label>
               <span>企业/个人名称</span>
               <input name="company" type="text" placeholder="例如：某某科技有限公司 / 张先生" autocomplete="organization" />
@@ -489,7 +515,7 @@
             <div class="form-row">
               <label>
                 <span>联系方式</span>
-              <input name="contact" type="text" placeholder="手机号 / 微信 / 邮箱" autocomplete="tel" />
+                <input name="contact" type="text" placeholder="手机号 / 微信 / 邮箱" autocomplete="tel" />
               </label>
               <label>
                 <span>项目阶段</span>
@@ -517,7 +543,7 @@
               <textarea name="message" rows="5" placeholder="简单描述当前流程、系统痛点或希望建设的产品方向"></textarea>
             </label>
             <button class="button button-primary form-button" type="submit">
-              <span>生成微信沟通内容</span>
+              <span>生成并复制沟通内容</span>
               <span class="button-icon" aria-hidden="true">→</span>
             </button>
             <output class="form-output" data-form-output></output>
