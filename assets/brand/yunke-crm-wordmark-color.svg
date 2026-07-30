@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 480" role="img" aria-labelledby="title desc">
+  <title id="title">云客 CRM 彩色主标</title>
+  <desc id="desc">深青色云朵与蓝色连接节点，配云客 CRM 字标。</desc>
+  <g fill="none" stroke="#0b6962" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M104 324h300c66 0 120-54 120-120 0-56-39-104-94-117C417 42 376 20 330 20c-62 0-114 41-132 97-11-3-22-5-34-5-67 0-122 55-122 122 0 50 31 92 75 110" stroke-width="44"/>
+  </g>
+  <g fill="none" stroke="#1769e8" stroke-linecap="round" stroke-linejoin="round" stroke-width="22">
+    <path d="M222 342h104"/>
+    <circle cx="202" cy="342" r="23" fill="#1769e8" stroke="none"/>
+    <circle cx="346" cy="342" r="23" fill="#1769e8" stroke="none"/>
+  </g>
+  <text x="590" y="323" fill="#0f1f3a" font-family="Microsoft YaHei, Noto Sans SC, Arial, sans-serif" font-size="190" font-weight="800">云客</text>
+  <text x="1040" y="323" fill="#0f1f3a" font-family="Arial, Helvetica, sans-serif" font-size="178" font-weight="800" letter-spacing="3">CRM</text>
+</svg>
