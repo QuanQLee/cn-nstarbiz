@@ -511,7 +511,7 @@ textarea {
 .product-illustration {
   aspect-ratio: 7 / 10;
   border-bottom: 1px solid var(--line);
-  background-image: url("./assets/service-illustration-triptych-v2.png");
+  background-image: url("./assets/service-illustration-triptych-v2.webp");
   background-repeat: no-repeat;
   background-size: 300% 100%;
 }
