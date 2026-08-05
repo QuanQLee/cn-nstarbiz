@@ -1157,7 +1157,7 @@ textarea {
 
 .contact-methods {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 12px;
   margin-top: 24px;
 }
@@ -1548,6 +1548,12 @@ body.simple-page .site-header {
 
   .site-nav {
     top: 66px;
+  }
+
+  .crm-product-preview,
+  .launch,
+  .tech {
+    display: none;
   }
 
   .hero {
