@@ -1,14 +1,15 @@
 # 国内网址部署准备清单
 
-本项目是纯静态官网，可以部署到国内云服务器、对象存储静态网站、CDN 或传统虚拟主机。正式访问域名规划为 `https://cn.nstarbiz.com`，`nstarbiz.com` 和 `www.nstarbiz.com` 可保留给其他站点。
+本项目是纯静态官网，可以部署到国内云服务器、对象存储静态网站、CDN 或传统虚拟主机。国内站主域名为 `https://cn.nstarbiz.com`；`nstarbiz.com` 和 `www.nstarbiz.com` 保留给国际站，云客 CRM 使用 `https://crm.cn.nstarbiz.com`。
 
 ## 当前上线范围
 
 - 展示软件系统、网站与小程序、AI 应用、智能硬件联调和部署维护能力。
-- 使用本地品牌资源与三张案例展示图，不依赖外部图片 CDN、字体或第三方脚本。
+- 使用本地品牌资源、CRM 演示截图与开发场景图，不依赖外部图片 CDN、字体或图标脚本。
+- 本次只发布官网静态文件，不发布 `crm/` 介绍页草稿，也不改线上 `/crm/` 业务路由、CRM 域名或 Nginx 配置。
 - 首页表单仅在浏览器中生成并复制微信沟通内容，不向服务器提交数据。
 - 页面右下角在线咨询按需嵌入云客 CRM；访客主动发送后，咨询内容进入 CRM 线索与沟通记录。
-- 微信 / 企业微信为优先沟通方式，电话/微信号为 `18173933209`。
+- 企业微信与云客 CRM 在线咨询为优先沟通方式。
 - `contact@nstarbiz.com` 作为发送资料、合同和附件的备用邮箱。
 - 联系区已接入企业微信二维码，客户可扫码添加项目负责人。
 
@@ -23,8 +24,10 @@
    - 当前静态网站可使用轻量服务器 + Nginx，或对象存储 + CDN。
 
 3. 配置 DNS 与 HTTPS
-   - 将 `cn.nstarbiz.com` 解析到正式服务。
-   - 配置有效 HTTPS 证书，并将 HTTP 自动跳转到 HTTPS。
+   - 将主机记录 `cn` 解析到国内官网服务。
+   - 将主机记录 `crm.cn` 解析到云客 CRM 服务。
+   - 为 `cn.nstarbiz.com` 和 `crm.cn.nstarbiz.com` 配置有效 HTTPS 证书。
+   - 将官网 HTTP 访问永久跳转到 `https://cn.nstarbiz.com`。
 
 4. 核对 ICP 备案展示
    - 页面当前展示 `湘ICP备2026020536号`。
@@ -43,12 +46,17 @@
 上传以下文件和目录：
 
 - `index.html`
+- `home.css`
+- `home.js`
 - `privacy.html`
 - `styles.css`
 - `main.js`
 - `robots.txt`
 - `sitemap.xml`
+- `baidu_verify_codeva-E9ctYFl28H.html`（百度站点验证文件，后续部署必须保留）
 - `assets/`
+
+本次不要上传本地 `crm/`、`artifacts/` 或示例 Nginx 配置。线上 `/crm/` 仍由现有 CRM 服务接管，站点地图仅列出实际发布的官网页面。
 
 `README.md`、`docs/`、`tools/` 和 Git 文件不需要上传到网站目录。
 
@@ -61,7 +69,7 @@ Nginx 可参考 `deploy/nginx-cn-static.conf.example`。
 - 在电脑和手机上测试页面排版。
 - 填写咨询表单，确认能生成并复制微信沟通内容。
 - 打开在线咨询，确认 CRM 表单完整显示、可以收起，并用测试联系方式验证消息进入 CRM。
-- 测试电话号码链接和备用邮箱链接。
+- 测试企业微信、在线咨询和备用邮箱入口。
 - 使用微信扫描企业微信二维码，确认能够打开项目负责人的添加页面。
 - 确认 `contact@nstarbiz.com` 可以正常收发邮件。
 - 确认案例内容可公开展示，没有客户隐私、真实账号或未授权商标。
