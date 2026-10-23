@@ -1,8 +1,25 @@
 # Domestic Homepage Design QA
 
-Date: 2026-10-20. Scope: domestic homepage release; existing CRM remains unchanged.
+Date: 2026-10-23. Scope: domestic homepage product entry; existing CRM remains unchanged.
 
-## Production Release Acceptance
+## Product Entry Release Acceptance
+
+- Published URL: https://cn.nstarbiz.com/#product-entry.
+- Release: `site-20261023-homepage-r1`; previous version privately backed up.
+- Primary navigation now exposes the product directory. CRM has an introduction
+  anchor and working merchant-login link; ERP remains upcoming with a plan link.
+- Local: eight viewports, eleven interaction checks, and desktop/mobile axe scans
+  passed. No JavaScript errors, failed requests, or detected WCAG violations.
+- Production: 48 file responses matched local SHA256 values. Desktop 1440x900
+  and mobile 390x844 screenshots were opened and inspected without overflow.
+- The focused follow-up passed an actual CRM-entry click, visible login form,
+  live chat loading, legacy CRM availability, and HTTP-to-HTTPS redirect.
+- Business-system files and Nginx configuration hashes match the preflight values.
+  No real login, enquiry, or email was submitted; recipient delivery is untested.
+- Evidence: `artifacts/deployment-20261023/`; release and rollback record:
+  `docs/releases/2026-10-23-product-entry.md`.
+
+## Previous Homepage Release Acceptance
 
 - Published URL: https://cn.nstarbiz.com/.
 - Release: `site-20261020-homepage-r1`. A private previous-version archive exists
